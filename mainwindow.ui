@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>531</width>
+    <height>330</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>音乐播放器</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>511</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="horizontalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>511</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="btn_insert">
+        <property name="text">
+         <string>添加</string>
+        </property>
+        <property name="icon">
+         <iconset resource="picture.qrc">
+          <normaloff>:/icon/images/append.bmp</normaloff>:/icon/images/append.bmp</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_remove">
+        <property name="text">
+         <string>移除</string>
+        </property>
+        <property name="icon">
+         <iconset resource="picture.qrc">
+          <normaloff>:/icon/images/remove.bmp</normaloff>:/icon/images/remove.bmp</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_clear">
+        <property name="text">
+         <string>清空</string>
+        </property>
+        <property name="icon">
+         <iconset resource="picture.qrc">
+          <normaloff>:/icon/images/clean.bmp</normaloff>:/icon/images/clean.bmp</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_exit">
+        <property name="text">
+         <string>退出</string>
+        </property>
+        <property name="icon">
+         <iconset resource="picture.qrc">
+          <normaloff>:/icon/images/exit.bmp</normaloff>:/icon/images/exit.bmp</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>511</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <widget class="QListWidget" name="listWidget_music">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>141</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>汉宫秋月.mp3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>琵琶语.mp3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>榕树下.mp3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>药九.mp3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>昭君怨.mp3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>左手指月.mp3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="lab_picture">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>0</y>
+        <width>361</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::TextFormat::AutoText</enum>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="picture.qrc">:/pitcure/images/QtPlayer.bmp</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::TextInteractionFlag::LinksAccessibleByKeyboard|Qt::TextInteractionFlag::LinksAccessibleByMouse</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QDoubleSpinBox" name="spbox_palySpeed">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>260</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="wrapping">
+     <bool>false</bool>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <property name="suffix">
+     <string> 倍速</string>
+    </property>
+    <property name="decimals">
+     <number>1</number>
+    </property>
+    <property name="singleStep">
+     <double>0.100000000000000</double>
+    </property>
+    <property name="value">
+     <double>1.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>260</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>循环</string>
+    </property>
+    <property name="icon">
+     <iconset resource="picture.qrc">
+      <normaloff>:/icon/images/refresh.png</normaloff>:/icon/images/refresh.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>260</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="picture.qrc">
+      <normaloff>:/icon/images/volumn.bmp</normaloff>:/icon/images/volumn.bmp</iconset>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>260</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>歌曲名</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>300</y>
+      <width>321</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>300</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0:00/0:00</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_pause_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="picture.qrc">
+      <normaloff>:/icon/images/Pause.ico</normaloff>:/icon/images/Pause.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_play_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>260</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="picture.qrc">
+      <normaloff>:/icon/images/Play.ico</normaloff>:/icon/images/Play.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_stop_4">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>260</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="picture.qrc">
+      <normaloff>:/icon/images/Stop.ico</normaloff>:/icon/images/Stop.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_fbw_3">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>260</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="picture.qrc">
+      <normaloff>:/icon/images/FastBackward.ico</normaloff>:/icon/images/FastBackward.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="tbn_ffw_3">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>260</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="picture.qrc">
+      <normaloff>:/icon/images/FastForward.ico</normaloff>:/icon/images/FastForward.ico</iconset>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="picture.qrc"/>
+ </resources>
+ <connections/>
+</ui>

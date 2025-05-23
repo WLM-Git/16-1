@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>images/append.bmp</file>
+        <file>images/clean.bmp</file>
+        <file>images/exit.bmp</file>
+        <file>images/FastBackward.ico</file>
+        <file>images/FastForward.ico</file>
+        <file>images/Pause.ico</file>
+        <file>images/Play.ico</file>
+        <file>images/refresh.png</file>
+        <file>images/remove.bmp</file>
+        <file>images/Stop.ico</file>
+        <file>images/volumn.bmp</file>
+    </qresource>
+    <qresource prefix="/pitcure">
+        <file>images/QtPlayer.bmp</file>
+    </qresource>
+</RCC>
