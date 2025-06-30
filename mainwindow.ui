@@ -29,12 +29,12 @@
        <x>0</x>
        <y>0</y>
        <width>511</width>
-       <height>31</height>
+       <height>32</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QPushButton" name="btn_insert">
+       <widget class="QPushButton" name="btnAdd">
         <property name="text">
          <string>添加</string>
         </property>
@@ -45,7 +45,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="btn_remove">
+       <widget class="QPushButton" name="btnRemove">
         <property name="text">
          <string>移除</string>
         </property>
@@ -56,7 +56,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="btn_clear">
+       <widget class="QPushButton" name="btnClear">
         <property name="text">
          <string>清空</string>
         </property>
@@ -97,43 +97,8 @@
         <height>221</height>
        </rect>
       </property>
-      <item>
-       <property name="text">
-        <string>汉宫秋月.mp3</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>琵琶语.mp3</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>榕树下.mp3</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>药九.mp3</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>昭君怨.mp3</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>左手指月.mp3</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string/>
-       </property>
-      </item>
      </widget>
-     <widget class="QLabel" name="lab_picture">
+     <widget class="QLabel" name="labPic">
       <property name="geometry">
        <rect>
         <x>150</x>
@@ -163,7 +128,7 @@
      </widget>
     </widget>
    </widget>
-   <widget class="QDoubleSpinBox" name="spbox_palySpeed">
+   <widget class="QDoubleSpinBox" name="doubleSpinBox">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -191,7 +156,7 @@
      <double>1.000000000000000</double>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="btnLoop">
     <property name="geometry">
      <rect>
       <x>320</x>
@@ -208,7 +173,7 @@
       <normaloff>:/icon/images/refresh.png</normaloff>:/icon/images/refresh.png</iconset>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="btnSound">
     <property name="geometry">
      <rect>
       <x>410</x>
@@ -225,7 +190,7 @@
       <normaloff>:/icon/images/volumn.bmp</normaloff>:/icon/images/volumn.bmp</iconset>
     </property>
    </widget>
-   <widget class="QSlider" name="horizontalSlider">
+   <widget class="QSlider" name="sliderVolume">
     <property name="geometry">
      <rect>
       <x>450</x>
@@ -238,7 +203,7 @@
      <enum>Qt::Orientation::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="labCurMedia">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -251,7 +216,7 @@
      <string>歌曲名</string>
     </property>
    </widget>
-   <widget class="QSlider" name="horizontalSlider_2">
+   <widget class="QSlider" name="sliderPosition">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -264,7 +229,7 @@
      <enum>Qt::Orientation::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="labRatio">
     <property name="geometry">
      <rect>
       <x>460</x>
@@ -277,7 +242,7 @@
      <string>0:00/0:00</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_pause_3">
+   <widget class="QPushButton" name="btnPause">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -294,7 +259,7 @@
       <normaloff>:/icon/images/Pause.ico</normaloff>:/icon/images/Pause.ico</iconset>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_play_3">
+   <widget class="QPushButton" name="btnPlay">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -311,7 +276,7 @@
       <normaloff>:/icon/images/Play.ico</normaloff>:/icon/images/Play.ico</iconset>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_stop_4">
+   <widget class="QPushButton" name="btnStop">
     <property name="geometry">
      <rect>
       <x>90</x>
@@ -328,7 +293,7 @@
       <normaloff>:/icon/images/Stop.ico</normaloff>:/icon/images/Stop.ico</iconset>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_fbw_3">
+   <widget class="QPushButton" name="btnPrevious">
     <property name="geometry">
      <rect>
       <x>130</x>

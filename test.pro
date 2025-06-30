@@ -1,5 +1,5 @@
 QT       += core gui
-
+QT += multimedia
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++17
@@ -16,7 +16,11 @@ HEADERS += \
     mainwindow.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    mainwindow_model.ui
+
+INCLUDEPATH += /opt/homebrew/opt/ffmpeg/include
+LIBS += -L/opt/homebrew/opt/ffmpeg/lib -lavcodec -lavformat -lavutil -lswscale
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -11,8 +11,10 @@
         <file>images/remove.bmp</file>
         <file>images/Stop.ico</file>
         <file>images/volumn.bmp</file>
+        <file>images/mute.bmp</file>
     </qresource>
     <qresource prefix="/pitcure">
         <file>images/QtPlayer.bmp</file>
+        <file>images/musicFile.png</file>
     </qresource>
 </RCC>
