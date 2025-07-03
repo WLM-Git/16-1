@@ -151,7 +151,7 @@ void MainWindow::on_btnAdd_clicked()
     }
 
     //当前不处于播放就播放列表里的第一个文件
-    if (player->PlayingState != QMediaPlayer::PlayingState)
+    if (player->playbackState() != QMediaPlayer::PlayingState)
     {
         ui->listWidget_music->setCurrentRow(0);
         QUrl source = getUrlFromItem(ui->listWidget_music->currentItem());      //获取播放媒介
@@ -213,7 +213,7 @@ void MainWindow::on_btnPlay_clicked()
     //设置播放器的播放源
     player->setSource(getUrlFromItem(ui->listWidget_music->currentItem()));
     //设置循环播放按钮的值
-    loopPlayer = ui->btnLoop->isEnabled();
+    loopPlayer = ui->btnLoop->isChecked();
     //播放器开始播放
     player->play();
 }

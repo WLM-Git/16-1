@@ -15,7 +15,7 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
 private:
-    QMediaPlayer *player;                                  //播放器
+    QMediaPlayer *player;                                   //播放器
     bool loopPlayer = true;                                 //是否循环播放
     QString durationTime;                                   //总时长,mm:ss 字符串
     QString positionTime;                                   //当前播放的时间节点,mm:ss 字符串
