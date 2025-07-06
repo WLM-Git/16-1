@@ -69,7 +69,7 @@ void MainWindow::do_stateChanged(QMediaPlayer::PlaybackState state)
     ui->btnPause->setEnabled(state == QMediaPlayer::PlayingState);
     ui->btnStop->setEnabled(state == QMediaPlayer::PlayingState);
     //播放完一曲后，如果此时处于循环播放状态，则播放下一首音乐
-    if (ui->btnLoop->isEnabled())
+    if (loopPlayer && (state == QMediaPlayer::StoppedState))
     {
         //获取当前歌曲所在列表行数
         int curRow = ui->listWidget_music->currentRow();
